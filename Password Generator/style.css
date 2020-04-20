@@ -1,0 +1,41 @@
+body {
+  background-color: #5e6564;
+  overflow: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+  margin-top: 10rem;
+}
+
+.selection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-dark {
+  background-color: #5f6670;
+  border: none;
+}
+
+.btn-dark:focus {
+  border-color: black;
+  outline: none;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px black;
+}
+
+.form-control:focus {
+  border-color: black;
+  outline: none;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px black;
+}
+
+.myrange {
+  width: 2.5rem;
+}
+
+.myrange:focus {
+  border-color: black;
+  outline: none;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px black;
+}

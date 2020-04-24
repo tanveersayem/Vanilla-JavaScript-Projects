@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>BMI Calculator</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="Apps-Calculator-Metro-icon.png"
+    />
+  </head>
+  <body>
+    <div class="flex">
+      <div class="container">
+        <h1 class="display-4">Body Mass Index Calculator</h1>
+        <p class="small">For adults, 20 years old and older</p>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            id="heightInput"
+            placeholder="Enter your height"
+          />
+          <select type="multiple" class="form-control select" id="heightunits">
+            <option value="metres">metres</option>
+            <option value="inches" selected="selected">inches</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            id="weightInput"
+            placeholder="Enter your weight"
+          />
+          <select type="multiple" class="form-control select" id="weightunits">
+            <option value="kg">kilograms</option>
+            <option value="lb" selected="selected">pounds</option>
+          </select>
+        </div>
+        <button class="btn btn-outline-dark callbtn">Calculate</button>
+        <!--<input type="submit" class="btn btn-outline-dark callbtn" /><-->
+
+        <div class="card">
+          <div class="card-header">
+            Your BMI
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" id="output">💪</h5>
+            <p class="card-text" id="comment"></p>
+            <a
+              href="https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/index.html#Definition"
+              class="btn btn-outline-dark"
+              target="_blank"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="gif">
+        <img
+          src="https://media.giphy.com/media/4bjIKBOWUnVPICCzJc/giphy.gif"
+          alt="health gif"
+          class="img-gif"
+        />
+      </div>
+      1
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

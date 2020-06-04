@@ -1,0 +1,18 @@
+body {
+  width: 80%;
+  margin: 2em auto 0 auto;
+}
+
+.images {
+  column-count: 3;
+}
+
+img {
+  width: 100%;
+}
+
+.image-hover:hover {
+  transform: scale(1.5);
+  border: 1px solid black;
+  transition: all 0.3s ease;
+}

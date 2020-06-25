@@ -3,6 +3,7 @@ const input = document.querySelector("input");
 const loadingImage = document.querySelector("#loadingImage");
 const imageSection = document.querySelector(".images");
 const loader = document.querySelector(".loader");
+const lost = document.querySelector(".lost");
 
 loadingImage.style.display = "none";
 loader.style.display = "none";
@@ -34,13 +35,19 @@ function search(searchTerm, pageNumber) {
 }
 
 function displayImages(images) {
-  images.forEach((image) => {
-    const imageElement = document.createElement("img");
-    const url = document.createElement("a");
-    url.href = image.imageURL;
-    imageElement.src = image.fullHDURL;
-    url.appendChild(imageElement);
-    imageSection.appendChild(url);
-  });
-  loadingImage.style.display = "none";
+  if (images.length > 1) {
+    images.forEach((image) => {
+      const imageElement = document.createElement("img");
+      const url = document.createElement("a");
+      url.href = image.imageURL;
+      imageElement.src = image.fullHDURL;
+      url.appendChild(imageElement);
+      imageSection.appendChild(url);
+    });
+    loadingImage.style.display = "none";
+  } else {
+    loadingImage.style.display = "none";
+    loader.style.display = "none";
+    lost.style.display = "";
+  }
 }

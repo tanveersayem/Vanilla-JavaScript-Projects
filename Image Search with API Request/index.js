@@ -15,6 +15,7 @@ function formSubmited(event) {
   let pageNumber = 1;
   search(searchTerm, pageNumber).then(displayImages);
   loader.addEventListener("click", () => {
+    const searchTerm = input.value;
     pageNumber++;
     search(searchTerm, pageNumber).then(displayImages);
   });

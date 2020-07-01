@@ -26,7 +26,7 @@ function search(searchTerm, pageNumber) {
   imageSection.innerHTML = "";
   loader.style.display = "";
   return fetch(
-    `https://pixabay.com/api/?key=16140890-cfd2c55f29001c6868f1a986d&per_page=20&page=${pageNumber}&q=${searchTerm}&image_type=photo`
+    `https://pixabay.com/api/?key=16140890-cfd2c55f29001c6868f1a986d&safesearch=true&per_page=20&page=${pageNumber}&q=${searchTerm}&image_type=photo`
   )
     .then((Response) => Response.json())
     .then((result) => {
